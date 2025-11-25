@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G Vanitha | Portfolio</title>
+
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <!-- BACKGROUND ANIMATION -->
+    <div class="background-animation"></div>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Vanitha</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a class="resume-btn" href="/static/vanitha_resume.pdf" download>Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="section home-section">
+        <img src="/static/images/profile1.jpg" class="profile-pic">
+
+        <h1>Hi, I'm <span>G Vanitha</span></h1>
+        <p class="tagline">Robotics | AI/ML | IoT | Embedded Systems Enthusiast</p>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I'm <strong>G Vanitha</strong>, a passionate Electronics & Communication Engineering student at
+            <strong>Sri Venkateshwara College of Engineering</strong>.
+        </p>
+        <p>
+            I specialize in Robotics, AI/ML, IoT, Embedded Systems, and creative front-end development.
+            Currently, I'm doing my internship at <strong>TEN</strong> and building industry-level innovative projects.
+        </p>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+<section id="education" class="section">
+    <h2>Education</h2>
+    
+     <!-- ENGINEERING CARD (NEWLY ADDED) -->
+    <div class="education-card">
+        <h3>Bachelor of Engineering (B.E.)</h3>
+        <p>College: <strong>Sri Venkateshwara College of Engineering</strong></p>
+        <p>Current CGPA (Till 4th Sem): <strong>8.05</strong></p>
+        <!-- No download button required -->
+    </div>
+    <!-- PU CARD -->
+    <div class="education-card">
+        <h3>12th (Higher Secondary)</h3>
+        <p>School: <strong>Govt. PU College Yelahanka</strong></p>
+        <p>Percentage: <strong>86.66%</strong></p>
+
+        <!-- PU Download Button -->
+        <a href="{{ url_for('static', filename='docs/pu_marksheet.pdf') }}" download>
+            <button class="download-btn">Download PU Marks Sheet</button>
+        </a>
+    </div>
+        <!-- SSLC CARD -->
+    <div class="education-card">
+        <h3>SSLC (10th)</h3>
+        <p>School: <strong>Mangala Vidya Mandira</strong></p>
+        <p>Percentage: <strong>88.48%</strong></p>
+
+        <!-- SSLC Download Button -->
+        <a href="{{ url_for('static', filename='docs/sslc_marksheet.pdf') }}" download>
+            <button class="download-btn">Download SSLC Marks Sheet</button>
+        </a>
+    </div>
+
+
+</section>
+
+<!-- SKILLS SECTION -->
+<!-- SKILLS SECTION -->
+<section id="skills" class="section">
+    <h2>Skills</h2>
+
+    <div class="skill-card-container">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">C++</div>
+        <div class="skill-card">Robotics</div>
+        <div class="skill-card">Electronics</div>
+        <div class="skill-card">IoT</div>
+    </div>
+</section>
+
+
+
+    <!-- PROJECTS SECTION -->
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+        <h3>Face Recognition Smart Door Unlocking</h3>
+
+        <div class="project-gallery">
+            <img src="/static/images/face_recognition1.jpg" alt="">
+            <img src="/static/images/face_recognition2.jpg" alt="">
+            <img src="/static/images/face_recognition3.jpg" alt="">
+        </div>
+
+        <p class="project-desc">
+            Developed an automated door unlocking system using face recognition and microcontroller-based hardware.
+        </p>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+        <h3>Footstep Power Generation</h3>
+
+        <div class="project-gallery">
+            <img src="/static/images/footstep1.jpg" alt="">
+            <img src="/static/images/footstep2.jpg" alt="">
+        </div>
+
+        <p class="project-desc">
+            A renewable energy system that generates electricity using the pressure applied from footsteps.
+        </p>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card">
+        <h3>AI Powered Robotic System</h3>
+
+        <div class="project-gallery">
+            <img src="/static/images/ai1.jpg" alt="">
+            <img src="/static/images/ai2.jpg" alt="">
+        </div>
+
+        <p class="project-desc">
+            AI-powered robotic system designed for detecting and removing plastic carry bags from public waste bins.
+        </p>
+    </div>
+
+</section>
+
+    <!-- CONTACT SECTION -->
+<section id="contact" class="section">
+    <h2>Contact</h2>
+
+    <div class="contact-container">
+
+        <!-- Email -->
+        <a class="contact-item" href="mailto:vanithag400@gmail.com" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" class="contact-icon">
+            <span>Email</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a class="contact-item" href="https://www.linkedin.com/in/g-vanitha-382022328" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" class="contact-icon">
+            <span>LinkedIn</span>
+        </a>
+
+        <!-- GitHub -->
+        <a class="contact-item" href="https://github.com/https://github.com/vanithag400-png" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" class="contact-icon">
+            <span>GitHub</span>
+        </a>
+
+    </div>
+</section>
